@@ -40,21 +40,13 @@ This project implements a **Li-Fi communication system** using visible light as 
 [PREAMBLE: 0xAA x4] [LEN: 1B] [PAYLOAD: 0-32B] [CHECKSUM: 1B]
 Example: AA AA AA AA 05 "HELLO" 0x2A
 
-text
-
 ## Hardware Implementation
 
 Transmitter:
-
 Arduino/ESP32 → PWM pin → Current-limiting resistor → High-brightness LED (white/blue)
-
 Receiver:
-
 Photodiode → Op-amp transimpedance → Bandpass filter → Comparator → MCU interrupt pin
-
 MCU → I2C/SPI → 16x2 LCD (HD44780)
-
-text
 
 ## Example Operation
 
